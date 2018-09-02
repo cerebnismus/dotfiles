@@ -1,2 +1,2 @@
 # awesome-config
-backup
+some linux configuration files
