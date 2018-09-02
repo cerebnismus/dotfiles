@@ -2,10 +2,10 @@
 some linux configuration files
 
 # resolution
-- Possible Resolutions      -> xrandr -q
-- Resolution & Dimension    -> xdpyinfo | grep dimensions
-- Change Resolution         -> xrandr --output <OUTPUT> --mode 1024x768
-- Find Current Display      -> xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/" Virtual1
+- Possible Resolutions-------> xrandr -q
+- Resolution & Dimension-----> xdpyinfo | grep dimensions
+- Change Resolution----------> xrandr --output <OUTPUT> --mode 1024x768
+- Find Current Display-------> xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/" Virtual1
   
 # ranger
 - Ranger TFileManager
