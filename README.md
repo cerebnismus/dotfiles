@@ -1,6 +1,16 @@
 # awesome-config
 some linux configuration files
 
+# dmenu
+- $ dmenu_run
+- $ echo -e "first\nsecond\nthird" | dmenu
+- $ dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*"
+- $ dmenu_run -fn 'Droid Sans Mono-9'
+- $ rm ~/.dmenu_cache
+- $ rm ~/.cache/dmenu_run
+- https://github.com/jukil/dmenu-scripts-collection
+- https://bbs.archlinux.org/viewtopic.php?id=80145 [dmenu hacking thread]
+
 # resolution
 - Possible Resolutions---------> xrandr -q
 - Resolution & Dimension-----> xdpyinfo | grep dimensions
