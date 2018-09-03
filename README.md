@@ -22,7 +22,7 @@ some linux configuration files
 - https://www.youtube.com/watch?v=nlolvAVqn10
   
 # cht.sh
-- [github.com/chubin/cheat.sh] 
+- github.com/chubin/cheat.sh
 - cht.sh --shell
 - cht.sh lua/:learn
 - curl cheat.sh/ls
