@@ -1,7 +1,7 @@
 ![screen](https://cdn1.imggmi.com/uploads/2018/9/30/c39e757a5bc0d53ba4a7bcad51f2ed22-full.png)
 
 # awesome-config
-- some linux configuration files from kuragxon
+- some linux configurations
 
 # Dependencies
 - Dependencies
