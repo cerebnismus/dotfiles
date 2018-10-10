@@ -5,6 +5,8 @@
 # Dependencies
 - Dependencies
 
+- sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+
 - sudo apt install network-manager rofi snap dbus scrot pavucontrol gnome-terminal gnome-nettool gnome-calendar py3status fonts-font-awesome vim zsh zsh-theme-powerlevel9k
 
 - sudo snap install chromium spotify
