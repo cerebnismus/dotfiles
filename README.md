@@ -1,4 +1,4 @@
-# Oguz's Awesome-Config Script
+# Awesome-Config Script
 
 
 ## Installation:
