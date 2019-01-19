@@ -15,10 +15,13 @@ bash awesome-config.sh
 awesome-config is a script that autoinstalls and autoconfigures a fully-functioning
 and minimal terminal-and-vim-based Linux environment.
 
-## To-do list
+## Some Issues
 
-[Issues Solved - startx](https://unix.stackexchange.com/questions/12269/arch-installation-startx-not-working)
-[Issues Solved - set wm](https://wiki.archlinux.org/index.php/Xinit)
-[Issues Solved - autostartx at login](https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login)
+- [Solved - startx](https://unix.stackexchange.com/questions/12269/arch-installation-startx-not-working)
+- [Solved - set wm](https://wiki.archlinux.org/index.php/Xinit)
+- [Solved - autostartx at login](https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login)
 
+## Mentor of Project
+
+[Savaş M. KAPLAN](https://github.com/Coldrain)
 
