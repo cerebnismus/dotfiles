@@ -3,7 +3,7 @@
 
 ## Installation:
 
-On an Arch based distribution as root, run the following:
+On an Linux based OS as root, run the following:
 
 ```
 curl -LO oguzhanlarca.github.io/awesome-config.sh
