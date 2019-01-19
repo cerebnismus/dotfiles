@@ -3,7 +3,7 @@
 
 ## Installation:
 
-On an Linux based OS as root, run the following:
+- On an Linux based OS as root, run the following:
 
 ```
 curl -LO oguzhanlarca.github.io/awesome-config.sh
@@ -12,7 +12,7 @@ bash awesome-config.sh
 
 ## What is awesome-config?
 
-awesome-config is a script that autoinstalls and autoconfigures a fully-functioning
+- awesome-config is a script that autoinstalls and autoconfigures a fully-functioning
 and minimal terminal-and-vim-based Linux environment.
 
 ## Some Issues
@@ -23,5 +23,5 @@ and minimal terminal-and-vim-based Linux environment.
 
 ## Mentor of Project
 
-[Savaş M. KAPLAN](https://github.com/Coldrain)
+- [Savaş M. KAPLAN](https://github.com/Coldrain)
 
