@@ -22,50 +22,22 @@ LC_ALL=C
 LANG=C
 export GIO_EXTRA_MODULES="/usr/lib/x86_64-linux-gnu/gio/modules/"
 
-SCRIPT_NAME="awesome-config.sh"
-ARGS="run"
-NEW_FILE="https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh"
+SCRIPT="awesome-config.sh"
+RUNSCRIPT="sudo ./awesome-config.sh"
+ARGS="run" #<run> <update> <increment-version> <man> <*>
+CHECK="https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh"
 
-version="1.2.3.44" # Awesome-Config Version
-
-# check if there is a new version of this file
-# here, hypothetically we check if a file exists in the disk.
-# it could be an apt/yum check or whatever...
-check_upgrade () {
-[ -f "$NEW_FILE" ] && {
-
-# install a new version of this file or package
-# again, in this example, this is done by just copying the new file
-echo "Found a new version, updating ..."
-cp "$NEW_FILE" "$SCRIPT_NAME"
-# rm -f "$NEW_FILE"
-
-# note that at this point this file was overwritten in the disk
-# now run this very own file, in its new version!
-echo "Running the new version..."
-$SCRIPT_NAME $ARGS
-
-# now exit this old instance
-exit $?
-}
-
-echo 'Latest version...'
-}
-
-main () {
-echo 'Awesome-Config version: ' $version
-check_upgrade
+version="1.2.3.43" # Awesome-Config Version
 
 ### CASE ###
 case $1 in
 run)
-echo ' '
-echo 'OPTION: INSTALLING...'
+echo 'OPTION: RUN'
 echo ' '
 
 # Default Signature.
 echo '-------------------------------------------------'
-echo 'Welcome to Awesome-Config Script! [CROSSPLATFORM]'
+echo 'Welcome to Awesome-Config Script' $version
 echo '-------------------------------------------------'
 
 echo "
@@ -73,11 +45,11 @@ echo "
 |  _  |  |  |  |  -__|__ --|  _  |        |  -__|
 |___._|________|_____|_____|_____|__|__|__|_____|
 
-___ __                          __   __
+                   ___ __                          __   __
 .----.-----.-----.'  _|__|.-----.--.--.----.---.-.|  |_|__|.-----.-----.
 |  __|  _  |     |   _|  ||  _  |  |  |   _|  _  ||   _|  ||  _  |     |
 |____|_____|__|__|__| |__||___  |_____|__| |___._||____|__||_____|__|__|
-|_____|
+                          |_____|
 "
 
 ./unix
@@ -171,7 +143,7 @@ echo '[ Awesome-Config ]' || echo $version
 welcomemsg || error 'User exited.'
 getuserandpass || error 'User exited.'
 preinstallmsg || error 'User exited.'
-echo '[ OK ]' || echo 'Awesome-Config Installing...'
+echo '[ WARNING ]' || echo 'Awesome-Config Installing...'
 
 ### Installation
 putgitrepo $dotfilesrepo $HOME || error 'dotfilesrepo failed to deploy'
@@ -179,24 +151,41 @@ putgitrepo $dotfilesrepo $HOME || error 'dotfilesrepo failed to deploy'
 
 ### Complete
 finalize
+echo '[ OK ]' || echo 'Awesome-Config Installed!'
 clear
 ;;
 
 ### Update
 update)
-echo ' '
 
+echo ' '
+# check if there is a new version of this file
+# here, hypothetically we check if a file exists in the disk.
+# it could be an apt/yum check or whatever...
+check_upgrade () {
+[ "$CHECK" ] && {
+# install a new version of this file or package
+# again, in this example, this is done by just copying the new file
+echo '\033[0;37mFound a new version, updating ...'
+curl $CHECK > $SCRIPT
+}
+echo '\033[1;37mUpdate process completed'
+}
+
+# note that at this point this file was overwritten in the disk
+# now run this very own file, in its new version!
+echo '[OVERWRITE]' 'Do you want to continue? (yes/no): '
+read userread
+if [ userread = yes ]
+then
+echo -e '\033[1;33mOPTION:' '\033[0;37mUPDATE'
 check_upgrade
 echo -e '\033[1;37mYou are using latest Awesome-Config Version:' $version
-
-echo 'First state in this script: If there is new vers. then install it!.'
-echo 'This is a hard installation.' 'Do you want to continue? (yes/no): '
-read userread
-if [userread==yes]
-then
-echo -e '\033[1;33mOPTION:' '\033[0;37mUPDATEING...'
+echo -e '\033[1;31mExiting the old version and re-run the script\033[1;37m.'
+exit $? # now exit this old instance
 else
-echo -e '\033[1;31mExiting the application.'
+echo -e '\033[1;31mRestarting the script\033[1;37m.'
+$RUNSCRIPT $ARGS
 fi
 ;;
 
@@ -220,4 +209,3 @@ echo -e '\033[1;37mYou are not using any option.' '\033[1;31mExiting the applica
 echo ' '
 ;;
 esac
-}
