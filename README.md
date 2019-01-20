@@ -17,9 +17,3 @@ bash awesome-config.sh
 ## Mentor of Project
 
 - [Savaş M. KAPLAN](https://github.com/Coldrain)
-
-## Some Old Issues
-
-- [Solved - startx](https://unix.stackexchange.com/questions/12269/arch-installation-startx-not-working)
-- [Solved - set wm](https://wiki.archlinux.org/index.php/Xinit)
-- [Solved - autostartx at login](https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login)
