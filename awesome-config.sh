@@ -7,9 +7,12 @@
 # Copyright (c) 2019 Oguzhan Ince
 # A command-line system config implementation tool - Written in bash 3.2+.
 #
+# ▒█▀▄▀█ ▀█▀ ▀▀█▀▀
+# ▒█▒█▒█ ▒█░ ░▒█░░
+# ▒█░░▒█ ▄█▄ ░▒█░░
+#
 # https://github.com/oguzhanlarca/awesome-config
 # http://www.wikizeroo.net/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSG9tZV9kaXJlY3Rvcnk
-
 
 # Default Configuration.
 bash_version="${BASH_VERSION/.*}"
@@ -24,21 +27,22 @@ export GIO_EXTRA_MODULES="/usr/lib/x86_64-linux-gnu/gio/modules/"
 
 SCRIPT="awesome-config.sh"
 RUNSCRIPT="sudo ./awesome-config.sh"
-ARGS="run" #<run> <update> <increment-version> <man> <*>
+ARGS="run" #<run> <update> <increment-version> <*>
 CHECK="https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh"
+GIT="https://github.com/oguzhanlarca/awesome-config.git"
 
-version="1.2.3.43" # Awesome-Config Version
+version="1.0.4.9" # Awesome-Config Version
 
 ### CASE ###
 case $1 in
 run)
-echo 'OPTION: RUN'
+# echo 'OPTION: RUN'
 echo ' '
 
 # Default Signature.
-echo '-------------------------------------------------'
-echo 'Welcome to Awesome-Config Script' $version
-echo '-------------------------------------------------'
+echo '------------------------------------------------------'
+echo '|  Welcome to [Awesome-Config] Script ver:' $version ' |'
+echo '------------------------------------------------------'
 
 echo "
 .---.-.--.--.--.-----.-----.-----.--------.-----.
@@ -84,7 +88,6 @@ echo "
 
 ### FUNCTIONS ###
 welcomemsg() { \
-echo ' '
 echo '------------------------------------------------------------------------------------'
 echo '|  This script will automatically install Unix/Linux-based fully-featured desktop  |'
 echo '------------------------------------------------------------------------------------'
@@ -93,48 +96,47 @@ echo ' '
 
 # GET CREDENTIALS
 getuserandpass() { \
-
-tmpuser=$(whoami)
-read -p 'Username: ' name
-while ! [ '$name' = '$tmpuser' ]; do
+name=$(whoami)
+read -p 'Username: ' tmpuser
+while ! [ $name = $tmpuser ]; do
 unset name
 read -p 'Username incorrect. Retype Username: ' name
 done
-
-read -sp 'Password: ' pass1
-read -sp 'Retype password: ' pass2
-while ! [ '$pass1' = '$pass2' ]; do
-unset pass2
-read -sp 'Passwords not match. Enter password again: ' pass1
-read -sp 'Retype password: ' pass2
-done
-
-done ;}
-
-###
-preinstallmsg() { \
-echo 'Get started!'
-echo 'The rest of the installation will now be totally automated.\\It will take some time.\\The system will begin installation!'
+#read -sp 'Password: ' pass1
+#echo ' '
+#read -sp 'Retype password: ' pass2
+#echo ' '
+#while ! [ $pass1 = $pass2 ]; do
+#unset pass2
+#echo 'Passwords not match.'
+#read -sp 'Enter password again: ' pass1
+#echo ' '
+#read -sp 'Retype password: ' pass2
+#echo ' '
+#done
 }
 
-###
 putgitrepo() {
-echo 'Downloading & Installing awesome-config files...'
-echo 'Creating A symbolic links (also known as a soft link or symlink)...'
-echo 'Clonning from [ https://github.com/oguzhanlarca ] to your $HOME path.'
-
-dir=$(mktemp -d)
-chown -R "$name":wheel "$dir"
-sudo -u "$name" git clone --depth 1 "$1" "$dir/gitrepo" >/dev/null 2>&1 &&
-sudo -u "$name" mkdir -p "$2" &&
-sudo -u "$name" cp -rfT "$dir"/gitrepo "$2"
+echo -e '\033[1;37mDownloading & Installing awesome-config files...'
+sleep 2 # Waits 1 second.
+echo -e '\033[0;37mClonning from [ \033[1;34mhttps://github.com/oguzhanlarca \033[0;37m] to your \033[1;33m$HOME \033[0;37mpath.'
+sleep 1 # Waits 0.5 second.
+echo -e '\033[0;37mCreating A symbolic links (also known as a soft link or symlink)...'
+sleep 1 # Waits 0.5 second.
+gitrepo="gitrepo"
+cd $HOME
+mkdir -p "$gitrepo"
+cd gitrepo
+echo -e ' '
+echo -e '\033[1;37mPlease type your sudo passwd to authorized gitrepo.\033[0;37m'
+sudo chown -R "$name":wheel "$HOME/gitrepo"
+sudo -u "$name" git clone "$GIT" # >/dev/null 2>&1
+# git clone https://github.com/oguzhanlarca/awesome-config.git
 }
 
-###
 finalize(){
-echo 'Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.'
-echo 'To run the new graphical environment, log out and log back in as your user, start the graphical environment.'
-echo '[ Awesome-Config ]' || echo $version
+echo -e '\033[1;37m[\033[0;34mFinalize\033[1;37m]' '[ \033[0;31mAwesome-Config \033[1;31m'$version '\033[1;37m]' '\033[1;37m[\033[1;32mOK\033[1;37m]' '\033[1;37m[\033[1;37mDone!\033[1;37m]'
+sleep 2 # Waits 0.5 second.
 }
 
 ### THE ACTUAL SCRIPT ###
@@ -150,17 +152,15 @@ echo '[ Awesome-Config ]' || echo $version
 ### Last check
 welcomemsg || error 'User exited.'
 getuserandpass || error 'User exited.'
-preinstallmsg || error 'User exited.'
-echo '[ WARNING ]' || echo 'Awesome-Config Installing...'
+echo -e '\033[1;33mWARNING' '\033[1;37mAwesome-Config Installing...'
 
 ### Installation
-putgitrepo $dotfilesrepo $HOME || error 'dotfilesrepo failed to deploy'
+putgitrepo $dotfilesrepo $HOME
 # putgitrepo $dotfilesfresh $HOME/.fresh-config || error  'dotfilesfresh failed to deploy'
 
 ### Complete
 finalize
-echo '[ OK ]' || echo 'Awesome-Config Installed!'
-clear
+echo ' '
 ;;
 
 ### UPDATE
@@ -182,8 +182,8 @@ echo '\033[1;37mUpdate process completed'
 
 # note that at this point this file was overwritten in the disk
 # now run this very own file, in its new version!
-echo 'Please put thefuck --alias | source in your ~/.config/fish/config.fish and apply changes with fish or restart your shell.'
-read -p '[OVERWRITE]' 'Do you want to continue? (yes/no): ' tmpread
+echo -e '\033[1;34mOverwrite!\033[1;37'
+read -p 'Do you want to continue? (yes/no): ' tmpread
 if [ tmpread = yes ]
 then
 echo -e '\033[1;33mOPTION:' '\033[0;37mUPDATE'
