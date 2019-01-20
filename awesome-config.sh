@@ -8,13 +8,10 @@
 # Written in bash 3.2+.
 # https://github.com/oguzhanlarca/awesome-config
 # http://www.wikizeroo.net/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSG9tZV9kaXJlY3Rvcnk
-
+#
 # Copyright (c) 2019 Oguzhan Ince
 
-version="1.0.0"
-
 # Default Configuration.
-
 bash_version="${BASH_VERSION/.*}"
 sys_locale="${LANG:-C}"
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
@@ -25,21 +22,31 @@ LC_ALL=C
 LANG=C
 export GIO_EXTRA_MODULES="/usr/lib/x86_64-linux-gnu/gio/modules/"
 
+# Awesome-Config Major Version:
+version="1.0.0"
+
+### CASE ###
+case $1 in
+install)
+echo ' '
+echo 'OPTION: INSTALLING...'
+echo ' '
+
 # Default Signature.
 echo '-------------------------------------------------'
 echo 'Welcome to Awesome-Config Script! [CROSSPLATFORM]'
 echo '-------------------------------------------------'
 
-echo "                                                
+echo "
 .---.-.--.--.--.-----.-----.-----.--------.-----.
 |  _  |  |  |  |  -__|__ --|  _  |        |  -__|
 |___._|________|_____|_____|_____|__|__|__|_____|
-                                                 
-                   ___ __                          __   __              
+
+___ __                          __   __
 .----.-----.-----.'  _|__|.-----.--.--.----.---.-.|  |_|__|.-----.-----.
 |  __|  _  |     |   _|  ||  _  |  |  |   _|  _  ||   _|  ||  _  |     |
 |____|_____|__|__|__| |__||___  |_____|__| |___._||____|__||_____|__|__|
-                          |_____|    
+|_____|
 "
 
 ./unix
@@ -142,3 +149,17 @@ putgitrepo $dotfilesfresh $HOME/.fresh-config || error  'dotfilesfresh failed to
 ### Complete
 finalize
 clear
+;;
+update)
+echo ' '
+echo 'OPTION: UPDATEING...'
+echo 'You are using latest Awesome-Config Version:' || echo $version
+;;
+*)
+echo ' '
+echo 'OPTIONS: install or update'
+echo 'You are not using any option.'
+echo ' '
+;;
+esac
+
