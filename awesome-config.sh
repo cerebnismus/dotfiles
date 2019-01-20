@@ -85,32 +85,39 @@ echo "
 ### FUNCTIONS ###
 welcomemsg() { \
 echo ' '
-echo "'-------------------------------------------------------------------------------'"
-echo "'This script will automatically install Unix/Linux-based fully-featured desktop.'"
-echo "'-------------------------------------------------------------------------------'"
+echo '------------------------------------------------------------------------------------'
+echo '|  This script will automatically install Unix/Linux-based fully-featured desktop  |'
+echo '------------------------------------------------------------------------------------'
 echo ' '
 }
 
+# GET CREDENTIALS
 getuserandpass() { \
-echo 'Firstly, please enter the username for $HOME directory.'
-read -p 'Username: ' name || exit
 
-while ! echo '$name' | grep '^[a-z_][a-z0-9_-]*$' >/dev/null 2>&1; do
-echo 'Username not match.'
+tmpuser=$(whoami)
+read -p 'Username: ' name
+while ! [ '$name' = '$tmpuser' ]; do
+unset name
+read -p 'Username incorrect. Retype Username: ' name
 done
+
 read -sp 'Password: ' pass1
 read -sp 'Retype password: ' pass2
 while ! [ '$pass1' = '$pass2' ]; do
 unset pass2
-read -sp 'Passwords not match.\Enter password again: ' pass1
-read -sp '\Retype password: ' pass2
+read -sp 'Passwords not match. Enter password again: ' pass1
+read -sp 'Retype password: ' pass2
+done
+
 done ;}
 
+###
 preinstallmsg() { \
 echo 'Get started!'
 echo 'The rest of the installation will now be totally automated.\\It will take some time.\\The system will begin installation!'
 }
 
+###
 putgitrepo() {
 echo 'Downloading & Installing awesome-config files...'
 echo 'Creating A symbolic links (also known as a soft link or symlink)...'
@@ -123,6 +130,7 @@ sudo -u "$name" mkdir -p "$2" &&
 sudo -u "$name" cp -rfT "$dir"/gitrepo "$2"
 }
 
+###
 finalize(){
 echo 'Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.'
 echo 'To run the new graphical environment, log out and log back in as your user, start the graphical environment.'
@@ -155,7 +163,7 @@ echo '[ OK ]' || echo 'Awesome-Config Installed!'
 clear
 ;;
 
-### Update
+### UPDATE
 update)
 
 echo ' '
@@ -174,9 +182,9 @@ echo '\033[1;37mUpdate process completed'
 
 # note that at this point this file was overwritten in the disk
 # now run this very own file, in its new version!
-echo '[OVERWRITE]' 'Do you want to continue? (yes/no): '
-read userread
-if [ userread = yes ]
+echo 'Please put thefuck --alias | source in your ~/.config/fish/config.fish and apply changes with fish or restart your shell.'
+read -p '[OVERWRITE]' 'Do you want to continue? (yes/no): ' tmpread
+if [ tmpread = yes ]
 then
 echo -e '\033[1;33mOPTION:' '\033[0;37mUPDATE'
 check_upgrade
