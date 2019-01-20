@@ -11,7 +11,7 @@ and minimal terminal-and-vim-based Crossplat-Unix/Linux environment.
 
 ```
 curl -LO https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh
-bash awesome-config.sh
+./awesome-config.sh run
 ```
 
 ## Ubuntu 18.04 LTS Linux configuration
