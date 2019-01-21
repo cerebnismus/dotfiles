@@ -55,9 +55,8 @@ echo "
 |____|_____|__|__|__| |__||___  |_____|__| |___._||____|__||_____|__|__|
                           |_____|
 "
-
+curl -LO https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/unix
 ./unix
-
 ### KNOWLEDGE ###
 
 # Operating system                        Path                                   Environment variable
