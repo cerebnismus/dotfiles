@@ -10,8 +10,8 @@ and minimal terminal-and-vim-based Crossplat-Unix/Linux environment.
 - On an Unix/Linux-based OS as root, run the following commands:
 
 ```
-curl -LO oguzhanlarca.github.io/awesome-config.sh
-bash awesome-config.sh
+curl -LO https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh
+./awesome-config.sh run
 ```
 
 ## Ubuntu 18.04 LTS Linux configuration

@@ -14,7 +14,6 @@
 # https://github.com/oguzhanlarca/awesome-config
 # http://www.wikizeroo.net/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSG9tZV9kaXJlY3Rvcnk
 
-# Default Configuration.
 bash_version="${BASH_VERSION/.*}"
 sys_locale="${LANG:-C}"
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
@@ -25,25 +24,23 @@ LC_ALL=C
 LANG=C
 export GIO_EXTRA_MODULES="/usr/lib/x86_64-linux-gnu/gio/modules/"
 
+### DEFAULTS ###
+[ -z '$dotfilesrepo' ] && dotfilesrepo='https://github.com/oguzhanlarca/awesome-config.git'
+# [ -z '$dotfilesfresh' ] && dotfilesfresh='https://github.com/oguzhanlarca/fresh-config.git'
 SCRIPT="awesome-config.sh"
 RUNSCRIPT="sudo ./awesome-config.sh"
 ARGS="run" #<run> <update> <increment-version> <*>
 CHECK="https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/awesome-config.sh"
 GIT="https://github.com/oguzhanlarca/awesome-config.git"
-
 version="1.0.4.9" # Awesome-Config Version
 
 ### CASE ###
 case $1 in
 run)
-# echo 'OPTION: RUN'
 echo ' '
-
-# Default Signature.
 echo '------------------------------------------------------'
 echo '|  Welcome to [Awesome-Config] Script ver:' $version ' |'
 echo '------------------------------------------------------'
-
 echo "
 .---.-.--.--.--.-----.-----.-----.--------.-----.
 |  _  |  |  |  |  -__|__ --|  _  |        |  -__|
@@ -55,7 +52,7 @@ echo "
 |____|_____|__|__|__| |__||___  |_____|__| |___._||____|__||_____|__|__|
                           |_____|
 "
-
+curl -LO https://raw.githubusercontent.com/oguzhanlarca/awesome-config/master/unix
 ./unix
 
 ### KNOWLEDGE ###
@@ -74,11 +71,6 @@ echo "
 # Linux / BSD (FHS)                       /home/<username>                       $HOME
 # AT&T Unix (original version)            <root>/usr/<username>                  $HOME
 # Android                                 /data/media/<userid>                   $HOME
-
-
-### DEFAULTS ###
-[ -z '$dotfilesrepo' ] && dotfilesrepo='https://github.com/oguzhanlarca/awesome-config.git'
-# [ -z '$dotfilesfresh' ] && dotfilesfresh='https://github.com/oguzhanlarca/fresh-config.git'
 
 # dir=$HOME
 # userdir=$HOME
