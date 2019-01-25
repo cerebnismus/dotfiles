@@ -1,0 +1,121 @@
+# [--- ARCH LINUX * i3status.conf ---]
+# Copyright (c) 2019 Oguzhan Ince
+#
+#.---.-.--.--.--.-----.-----.-----.--------.-----.
+#|  _  |  |  |  |  -__|__ --|  _  |        |  -__|
+#|___._|________|_____|_____|_____|__|__|__|_____|
+#                   ___ __                          __   __
+#.----.-----.-----.'  _|__|.-----.--.--.----.---.-.|  |_|__|.-----.-----.
+#|  __|  _  |     |   _|  ||  _  |  |  |   _|  _  ||   _|  ||  _  |     |
+#|____|_____|__|__|__| |__||___  |_____|__| |___._||____|__||_____|__|__|
+#                          |_____|
+# 
+# ***---SOURCES---***
+# https://github.com/oguzhanlarca/awesome-config
+# https://github.com/ultrabug/py3status
+# https://github.com/KrissN/akonadi-ews/issues/16
+#
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s: ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+    colors = true
+    interval = 1
+		color_separator = "#586e75"
+		# output_format = "dzen2"
+}
+# order += "run_watch DHCP"
+# order += "run_watch VPNC"
+# order += "path_exists VPN"
+# order += "ipv6"
+# order += "ethernet <eth_interface_name>"
+# order += "wireless <wlan_interface_name>"
+order += "ethernet _first_"
+order += "wireless _first_"
+order += "cpu_temperature 0"
+order += "load"
+order += "disk /"
+order += "battery 0"
+order += "tztime local"
+order += "volume master"
+
+###
+#
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPNC {
+        pidfile = "/var/run/vpnc/pid"
+}
+
+
+path_exists VPN {
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+wireless <wlan_interface_name> {
+        # if you use %speed, i3status requires root privileges
+        format_up = "W:(%quality %essid, %bitrate) %ip"
+        format_down = "W!"
+        # on_click 1 = "exec gnome-nettool"
+}
+
+ethernet <eth_interface_name> {
+        # if you use %speed, i3status requires root privileges
+        format_up = "E:%ip(%speed)"
+        format_down = "E!"
+        # on_click 1 = "exec gnome-nettool"
+}
+
+wireless _first_ {
+        format_up = "W:%ip(%essid%quality%bitrate)"
+        format_down = "W!"
+        # on_click 1 = "exec gnome-nettool"
+}
+
+ethernet _first_ {
+        # if you use %speed, i3status requires root privileges
+        format_up = "E:%ip(%speed)"
+        format_down = "E!"
+        # on_click 1 = "exec gnome-nettool"
+}
+
+battery 0 {
+        format = "B:%percentage - %remaining %status"
+        # format_down = "No battery"
+        status_full = "🔋"
+        status_chr = "⚡"
+        status_bat = "☻"
+        status_unk = "?"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+tztime local {
+        format = "%d.%m.%Y %H:%M:%S"
+        # on_click 1 = "exec gnome-calendar"
+}
+
+cpu_temperature 0 {
+        format = "T:%degrees°C"
+        path = "/sys/class/hwmon/hwmon0/temp1_input"
+}
+
+load {
+        format = "L:%1min - %5min"
+}
+
+disk "/" {
+        format = "HDD:%avail"
+}
+
+volume master {
+        format = "♪➔ %volume"
+        format_muted = "♪➔ muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+        # on_click 1 = "exec pavucontrol"
+}
