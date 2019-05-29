@@ -1,5 +1,5 @@
 ## Introduction
-- A simple guide to install and configure i3
+- A simple guide to install and configure Arch-i3 on Mac
 
 ## Installation
 ### Update 30 May '19
