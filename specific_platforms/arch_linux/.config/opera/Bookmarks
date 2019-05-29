@@ -1,0 +1,722 @@
+{
+   "checksum": "d4f25482321c2c48d7fd3ba3acd260f6",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13198256728575892",
+               "id": "65",
+               "name": "fish-cookbook",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://github.com/jorgebucaran/fish-cookbook"
+            }, {
+               "date_added": "13200415040996369",
+               "id": "66",
+               "name": "irc-doc",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://weechat.org/doc/stable/"
+            }, {
+               "date_added": "13200415060721830",
+               "id": "67",
+               "name": "irc-guide",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://weechat.org/files/doc/stable/weechat_quickstart.en.html"
+            } ],
+            "date_added": "13201995943729588",
+            "date_modified": "13201995943729588",
+            "id": "54",
+            "name": "Terminal",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         }, {
+            "date_added": "13198635740587060",
+            "id": "55",
+            "name": " ",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13198635092617918",
+            "id": "56",
+            "name": " ",
+            "sync_transaction_version": "12",
+            "type": "url",
+            "url": "https://www.netflix.com/browse"
+         }, {
+            "date_added": "13200476178405641",
+            "id": "57",
+            "name": " ",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://sunli.co/"
+         }, {
+            "date_added": "13198635325533696",
+            "id": "58",
+            "name": " ",
+            "sync_transaction_version": "8",
+            "type": "url",
+            "url": "https://dizilab.pw/"
+         }, {
+            "date_added": "13198635396179677",
+            "id": "59",
+            "name": " ",
+            "sync_transaction_version": "9",
+            "type": "url",
+            "url": "http://cs.sakarya.edu.tr/"
+         }, {
+            "date_added": "13198635366937986",
+            "id": "60",
+            "name": " ",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://sabis.sakarya.edu.tr/tr/Login"
+         }, {
+            "date_added": "13198635270898080",
+            "id": "61",
+            "name": " ",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://github.com/oguzhanlarca"
+         }, {
+            "date_added": "13199430175006794",
+            "id": "62",
+            "name": " ",
+            "sync_transaction_version": "11",
+            "type": "url",
+            "url": "https://www.udemy.com/penetration-testing/learn/v4/content"
+         }, {
+            "date_added": "13199430266029317",
+            "id": "63",
+            "name": " ",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://yabancidizi.org/dizi/future-man/sezon-1/bolum-1"
+         }, {
+            "date_added": "13200657804012284",
+            "id": "64",
+            "name": "Chill",
+            "sync_transaction_version": "10",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=OPAy-sQQ7xU"
+         } ],
+         "date_added": "13201994590745657",
+         "date_modified": "13200657804012284",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "custom_root": {
+         "speedDial": {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13201994334912900",
+                  "id": "17",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/8912fbc741edbb52b41e0795e6fbbe865884a819.png",
+                     "imageDataType": "2",
+                     "imageID": "6B8CFBDAD89F8B366C2E3D30EFB812E42BA470D0576A8C2982AD13C263B1957C",
+                     "imageType": "2",
+                     "partner_id": "booking_com_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/8912fbc741edbb52b41e0795e6fbbe865884a819.png",
+                     "partner_url": "http://www.booking.com/index.html?aid=350386&label=operasoft-sdO15-350386&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_tr",
+                     "revision": "20190426",
+                     "server_position": "1"
+                  },
+                  "name": "Booking.com",
+                  "sync_transaction_version": "4",
+                  "type": "url",
+                  "url": "http://www.booking.com/"
+               }, {
+                  "date_added": "13201994334913872",
+                  "id": "18",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/989f72b0912120c51b652a978e3e0aa2b9d928a0.png",
+                     "imageDataType": "2",
+                     "imageID": "4EDCFE31B708EF1CC37B0EFE1F8A6C3A0CCE2B94A43FB0D32E9C2568AA4DE2D7",
+                     "imageType": "2",
+                     "partner_id": "yandex_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/989f72b0912120c51b652a978e3e0aa2b9d928a0.png",
+                     "partner_url": "http://www.yandex.com.tr/?clid=1669560",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/yandex_tr",
+                     "revision": "20171003",
+                     "server_position": "2"
+                  },
+                  "name": "Yandex",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "http://www.yandex.com.tr/"
+               }, {
+                  "date_added": "13201994334914867",
+                  "id": "19",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/be801738a0167b81a4ca091ed6f4b3d60c903cb1.png",
+                     "imageDataType": "2",
+                     "imageID": "5582835DF446DDA4E0A57AED5C44AB618C3647AA7E0325738C6AA268D8E5653A",
+                     "imageType": "2",
+                     "partner_id": "milliyet_com_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/be801738a0167b81a4ca091ed6f4b3d60c903cb1.png",
+                     "partner_url": "http://www.milliyet.com.tr/",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/milliyet_com_tr",
+                     "revision": "20171003",
+                     "server_position": "3"
+                  },
+                  "name": "Milliyet",
+                  "sync_transaction_version": "5",
+                  "type": "url",
+                  "url": "http://www.milliyet.com.tr/"
+               }, {
+                  "date_added": "13201994334915876",
+                  "id": "20",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/6d0029f72c101630ee3b4c09d35e9d37ef46b9e5.png",
+                     "imageDataType": "2",
+                     "imageID": "BEDCF22343FE9F27FE9A3AA6A2FC1741D24004600397C69916B72D15885B5BFA",
+                     "imageType": "2",
+                     "partner_id": "gittigidiyor_com",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/6d0029f72c101630ee3b4c09d35e9d37ef46b9e5.png",
+                     "partner_url": "https://www.gittigidiyor.com/?utm_source=opera&utm_medium=affiliate&utm_campaign=opera&scxid=14489-145817-2357-0",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/gittigidiyor_com",
+                     "revision": "20171003",
+                     "server_position": "4"
+                  },
+                  "name": "GittiGidiyor",
+                  "sync_transaction_version": "7",
+                  "type": "url",
+                  "url": "http://www.gittigidiyor.com/"
+               }, {
+                  "date_added": "13201994334917022",
+                  "id": "21",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/dc656f9afc4452289dd76a0f7191dff7b9fe556e.png",
+                     "imageDataType": "2",
+                     "imageID": "83A4D2A53725BBB10FDDA0D8041F0032215C5EAAFD1E35EDE2576E1F840218DA",
+                     "imageType": "2",
+                     "partner_id": "hurriyet",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/dc656f9afc4452289dd76a0f7191dff7b9fe556e.png",
+                     "partner_url": "http://www.hurriyet.com.tr/",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/hurriyet",
+                     "revision": "20171003",
+                     "server_position": "5"
+                  },
+                  "name": "Hürriyet",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "http://www.hurriyet.com.tr/"
+               }, {
+                  "date_added": "13201994334918163",
+                  "id": "22",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/baf46901cd94c248197d5511d704897014775bce.png",
+                     "imageDataType": "2",
+                     "imageID": "82909B926406328D2284882A01F1B0C7B86BE1724BDEE92E92B80490E683F7EE",
+                     "imageType": "2",
+                     "partner_id": "aliexpress_com_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/baf46901cd94c248197d5511d704897014775bce.png",
+                     "partner_url": "https://redir.opera.com/speeddials/partner/aliexpress_com_tr",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/aliexpress_com_tr",
+                     "revision": "20171003",
+                     "server_position": "6"
+                  },
+                  "name": "AliExpress",
+                  "sync_transaction_version": "6",
+                  "type": "url",
+                  "url": "http://aliexpress.com/"
+               } ],
+               "date_added": "13201994590994847",
+               "date_modified": "13201994591242928",
+               "id": "8",
+               "meta_info": {
+                  "speed_dial_root_folder_guid": "f7da0012-a649-42fc-9063-00c98eca04fb"
+               },
+               "name": "byzantium",
+               "sync_transaction_version": "3",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13200780495410797",
+                  "id": "49",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/8912fbc741edbb52b41e0795e6fbbe865884a819.png",
+                     "imageDataType": "2",
+                     "imageID": "6B8CFBDAD89F8B366C2E3D30EFB812E42BA470D0576A8C2982AD13C263B1957C",
+                     "imageType": "2",
+                     "partner_id": "booking_com_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/8912fbc741edbb52b41e0795e6fbbe865884a819.png",
+                     "partner_url": "http://www.booking.com/index.html?aid=350386&label=operasoft-sdO15-350386&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_tr",
+                     "revision": "20190426",
+                     "server_position": "1"
+                  },
+                  "name": "Booking.com",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "http://www.booking.com/"
+               }, {
+                  "date_added": "13198219879149824",
+                  "id": "50",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/baf46901cd94c248197d5511d704897014775bce.png",
+                     "imageDataType": "2",
+                     "imageID": "82909B926406328D2284882A01F1B0C7B86BE1724BDEE92E92B80490E683F7EE",
+                     "imageType": "2",
+                     "partner_id": "aliexpress_com_tr",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/baf46901cd94c248197d5511d704897014775bce.png",
+                     "partner_url": "https://redir.opera.com/speeddials/partner/aliexpress_com_tr",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/aliexpress_com_tr",
+                     "revision": "20171003",
+                     "server_position": "6"
+                  },
+                  "name": "AliExpress",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "http://aliexpress.com/"
+               }, {
+                  "date_added": "13198219879149047",
+                  "id": "51",
+                  "meta_info": {
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/6d0029f72c101630ee3b4c09d35e9d37ef46b9e5.png",
+                     "imageDataType": "2",
+                     "imageID": "BEDCF22343FE9F27FE9A3AA6A2FC1741D24004600397C69916B72D15885B5BFA",
+                     "imageType": "2",
+                     "partner_id": "gittigidiyor_com",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/6d0029f72c101630ee3b4c09d35e9d37ef46b9e5.png",
+                     "partner_url": "https://www.gittigidiyor.com/?utm_source=opera&utm_medium=affiliate&utm_campaign=opera&scxid=14489-145817-2357-0",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/gittigidiyor_com",
+                     "revision": "20171003",
+                     "server_position": "4"
+                  },
+                  "name": "GittiGidiyor",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "http://www.gittigidiyor.com/"
+               }, {
+                  "date_added": "13202459485931216",
+                  "id": "52",
+                  "meta_info": {
+                     "imageData": "https://sync-thumbnails.operacdn.com/fc00bfccb21f6574e62423b59c65896c50fa0b2d18482fa4014ad503d92f2225.jpe",
+                     "imageDataType": "2",
+                     "imageID": "553E21F595618804DF7AF3151DC2CE33F48950B597BD0F6415661FF015160F48",
+                     "imageIdentifier": "6a59b445",
+                     "imageType": "2"
+                  },
+                  "name": "Listen A Minute: Easier English Listening and Lesson Plans",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "https://listenaminute.com/"
+               }, {
+                  "date_added": "13202463533639463",
+                  "id": "53",
+                  "name": "translate - Google'da Ara",
+                  "sync_transaction_version": "3",
+                  "type": "url",
+                  "url": "https://www.google.com.tr/search?client=opera&q=translate&sourceid=opera&ie=UTF-8&oe=UTF-8"
+               } ],
+               "date_added": "13201995943720114",
+               "date_modified": "13202463533639463",
+               "id": "48",
+               "meta_info": {
+                  "speed_dial_root_folder_guid": "152cf3a2-1525-4c73-b333-1a58195cd4d6"
+               },
+               "name": "Oguzhan MacBook Air",
+               "sync_transaction_version": "3",
+               "type": "folder"
+            } ],
+            "date_added": "13201994590994650",
+            "date_modified": "13201995943721221",
+            "id": "6",
+            "name": "Speed Dials",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         },
+         "trash": {
+            "children": [ {
+               "date_added": "13198995227314735",
+               "id": "25",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "9"
+               },
+               "name": "make shell",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.google.com.tr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwi94LKgxLrhAhVFDWMBHdOzCIUQFjABegQIARAB&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaking-linux-shell-c%2F&usg=AOvVaw0jDrhWrrJQnA1-SLm9OE3H"
+            }, {
+               "date_added": "13199454528374058",
+               "id": "26",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "9"
+               },
+               "name": "socket",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://github.com/NLinh2911/Socket-Chat"
+            }, {
+               "date_added": "13198635158813558",
+               "id": "27",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "9"
+               },
+               "name": "sys",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://github.com/EkremKandemir/SystemProgramming"
+            }, {
+               "date_added": "13200057204419777",
+               "id": "28",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "14"
+               },
+               "name": "kablan",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.youtube.com/channel/UCuZ6G466XodI8wchTHLQaxg"
+            }, {
+               "date_added": "13199430248404837",
+               "id": "29",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "14"
+               },
+               "name": "list",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.hackeroyale.com/best-hacking-movies/#4_Office_Space"
+            }, {
+               "date_added": "13199430192357699",
+               "id": "30",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "13"
+               },
+               "name": "unit",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.udemy.com/unit-test-yazma-sanati/learn/v4/content"
+            }, {
+               "date_added": "13198635407282102",
+               "id": "31",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "8"
+               },
+               "name": " ",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.sasgem.sakarya.edu.tr/"
+            }, {
+               "date_added": "13199427492495836",
+               "id": "32",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "6"
+               },
+               "name": "cosmos",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://unutulmazfilmler.pw/cosmos-a-space-time-odyssey.html"
+            }, {
+               "date_added": "13200960174242629",
+               "id": "33",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "4"
+               },
+               "name": "agent",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://unutulmazfilmler.pw/red-sparrow.html"
+            }, {
+               "date_added": "13200052371266455",
+               "id": "34",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "18"
+               },
+               "name": "music",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=0nouhZQqtx4"
+            }, {
+               "date_added": "13199427669050305",
+               "id": "35",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "7"
+               },
+               "name": "Eternity and a Day",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://unutulmazfilmler.pw/eternity-and-a-day-sonsuzluk-ve-bir-gun.html"
+            }, {
+               "date_added": "13200606879044792",
+               "id": "36",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "4"
+               },
+               "name": "Lars and the Real Girl",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://720p-izle.com/izle/altyazi/lars-and-the-real-girl.html"
+            }, {
+               "date_added": "13199427687718444",
+               "id": "37",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "5"
+               },
+               "name": "Striped Pyjamas",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://unutulmazfilmler.pw/the-boy-in-the-striped-pyjamas-cizgili-pijamali-cocuk.html"
+            }, {
+               "date_added": "13199308057921772",
+               "id": "38",
+               "meta_info": {
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "10"
+               },
+               "name": "Exorcizamus",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.google.com.tr/search?client=opera&hs=lWy&biw=1326&bih=648&ei=3uOsXJ3nK8yymwWg6bHgBg&q=Exorcizamus&oq=Exorcizamus&gs_l=psy-ab.3..0i71l7.26333.26333..26488...0.0..0.0.0.......0....2j1..gws-wiz.k6ZEbuDguf0"
+            }, {
+               "date_added": "13198219879145608",
+               "id": "39",
+               "meta_info": {
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/dfb8e26cece0bc9b48746878a1da78dee32fc104.png",
+                  "imageDataType": "2",
+                  "imageID": "2927498828C5AE69F685B89AB2C78250E59651632542A7013555819175954B5B",
+                  "imageType": "2",
+                  "partner_id": "booking_com_tr",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/dfb8e26cece0bc9b48746878a1da78dee32fc104.png",
+                  "partner_url": "http://www.booking.com/index.html?aid=350386&label=operasoft-sdO15-350386&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_tr",
+                  "revision": "20180704",
+                  "server_position": "1",
+                  "undoTrashParentId": "8",
+                  "undoTrashParentIndex": "2"
+               },
+               "name": "Booking.com",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.booking.com/"
+            }, {
+               "date_added": "13198219879148446",
+               "id": "40",
+               "meta_info": {
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/989f72b0912120c51b652a978e3e0aa2b9d928a0.png",
+                  "imageDataType": "2",
+                  "imageID": "4EDCFE31B708EF1CC37B0EFE1F8A6C3A0CCE2B94A43FB0D32E9C2568AA4DE2D7",
+                  "imageType": "2",
+                  "partner_id": "yandex_tr",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/989f72b0912120c51b652a978e3e0aa2b9d928a0.png",
+                  "partner_url": "http://www.yandex.com.tr/?clid=1669560",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/yandex_tr",
+                  "revision": "20171003",
+                  "server_position": "2",
+                  "undoTrashParentId": "8",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Yandex",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.yandex.com.tr/"
+            }, {
+               "date_added": "13198219879149415",
+               "id": "41",
+               "meta_info": {
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/dc656f9afc4452289dd76a0f7191dff7b9fe556e.png",
+                  "imageDataType": "2",
+                  "imageID": "83A4D2A53725BBB10FDDA0D8041F0032215C5EAAFD1E35EDE2576E1F840218DA",
+                  "imageType": "2",
+                  "partner_id": "hurriyet",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/dc656f9afc4452289dd76a0f7191dff7b9fe556e.png",
+                  "partner_url": "http://www.hurriyet.com.tr/",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/hurriyet",
+                  "revision": "20171003",
+                  "server_position": "5",
+                  "undoTrashParentId": "8",
+                  "undoTrashParentIndex": "3"
+               },
+               "name": "Hürriyet",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.hurriyet.com.tr/"
+            }, {
+               "date_added": "13198219879148724",
+               "id": "42",
+               "meta_info": {
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/be801738a0167b81a4ca091ed6f4b3d60c903cb1.png",
+                  "imageDataType": "2",
+                  "imageID": "5582835DF446DDA4E0A57AED5C44AB618C3647AA7E0325738C6AA268D8E5653A",
+                  "imageType": "2",
+                  "partner_id": "milliyet_com_tr",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/be801738a0167b81a4ca091ed6f4b3d60c903cb1.png",
+                  "partner_url": "http://www.milliyet.com.tr/",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/milliyet_com_tr",
+                  "revision": "20171003",
+                  "server_position": "3",
+                  "undoTrashParentId": "8",
+                  "undoTrashParentIndex": "2"
+               },
+               "name": "Milliyet",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.milliyet.com.tr/"
+            }, {
+               "date_added": "13198219879151542",
+               "id": "43",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/b189f6ad04d571890f02d63d295ae3815bc60d64.png",
+                  "pb_nav_url": "http://www.facebook.com/",
+                  "pb_partner_id": "facebook_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/facebook_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "5",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Facebook",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.facebook.com/"
+            }, {
+               "date_added": "13198219879151132",
+               "id": "44",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/609fa7dfdac6e13e43d220628faf73eb0bc67ff2.png",
+                  "pb_nav_url": "https://redir.opera.com/speeddials/partner/aliexpress_tr_bb",
+                  "pb_partner_id": "aliexpress_tr_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/aliexpress_tr_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "4",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "AliExpress",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://aliexpress.com/"
+            }, {
+               "date_added": "13198219879150741",
+               "id": "45",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/c3c9b9b6a92838abd1dae8621089ead8ca53d50b.png",
+                  "pb_nav_url": "https://www.gittigidiyor.com/?utm_source=opera&utm_medium=affiliate&utm_campaign=opera&scxid=14489-145817-2357-0",
+                  "pb_partner_id": "gittigidiyor_com_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/gittigidiyor_com_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "3",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "GittiGidiyor",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.gittigidiyor.com/"
+            }, {
+               "date_added": "13198219879150415",
+               "id": "46",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/ee92cb941d49fb824f1ce1be9561251129a489f2.png",
+                  "pb_nav_url": "http://www.milliyet.com.tr/",
+                  "pb_partner_id": "milliyet_com_tr_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/milliyet_com_tr_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "2",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Milliyet",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.milliyet.com.tr/"
+            }, {
+               "date_added": "13198219879150065",
+               "id": "47",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/a07ea74aa0b3aae5b7dc37789a2e834b1e883060.png",
+                  "pb_nav_url": "https://www.booking.com/?aid=1547274",
+                  "pb_partner_id": "booking_com_tr_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_tr_bb",
+                  "pb_revision": "20180329",
+                  "pb_server_position": "1",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Booking.com",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.booking.com/"
+            } ],
+            "date_added": "13201994590994652",
+            "date_modified": "13200960174242629",
+            "id": "7",
+            "name": "Trash",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         },
+         "unsorted": {
+            "children": [  ],
+            "date_added": "13201994590994641",
+            "date_modified": "0",
+            "id": "4",
+            "name": "Unsorted bookmarks",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         },
+         "userRoot": {
+            "children": [ {
+               "date_added": "13200235067513480",
+               "id": "23",
+               "name": "https://opensource.apple.com/source/gnutar/gnutar-413/tar/src/tar.c",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://opensource.apple.com/source/gnutar/gnutar-413/tar/src/tar.c"
+            }, {
+               "date_added": "13198261433406963",
+               "id": "24",
+               "name": "Configuration · morhetz/gruvbox Wiki",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://github.com/morhetz/gruvbox/wiki/Configuration"
+            } ],
+            "date_added": "13201994590994646",
+            "date_modified": "13200235067513480",
+            "id": "5",
+            "name": "Other bookmarks",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         }
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13201994590745710",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Imported bookmarks",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "sync_transaction_version": "12",
+      "synced": {
+         "children": [  ],
+         "date_added": "13201994590745718",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
