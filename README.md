@@ -2,6 +2,9 @@
 - A simple guide to install and configure i3
 
 ## Installation
+### Update 30 May '19
+- Arch Linux On Macbook Air
+https://github.com/oguzhanlarca/awesome-config/tree/master/specific_platforms/arch_linux#arch-on-macbook
 ### Update 29 May '19
 ```
 sudo pacman -S xorg xf86-input-synaptics acpid alsa-utils i3 w3m ranger
