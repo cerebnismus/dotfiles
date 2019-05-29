@@ -1,23 +1,28 @@
-# Change your own dependencies
-sudo raspi-config
-# Install your favorite editor
-sudo apt install vim
-vim
-# Disable the Raspberry Pi ‘color test’ by adding the line disable_splash=1 to /boot/config.txt.
-sudo vim /boot/config.txt
-# Disable the Raspberry Pi logo in the corner of the screen by adding logo.nologo
-# Disable the various bits of output from the kernel and friends by adding consoleblank=0 loglevel=1 quiet
-# to /boot/cmdline.txt.
-sudo vim /boot/cmdline.txt
+```
+### Change your own dependencies
+`sudo raspi-config`
+### Install your favorite editor
+`sudo apt install vim`
+`vim`
+### Disable the Raspberry Pi ‘color test’ by adding the line disable_splash=1 to /boot/config.txt.
+`sudo vim /boot/config.txt`
+### Disable the Raspberry Pi logo in the corner of the screen by adding logo.nologo
+### Disable the various bits of output from the kernel and friends by adding consoleblank=0 loglevel=1 quiet
+### to /boot/cmdline.txt.
+`sudo vim /boot/cmdline.txt`
 # Disable the login prompt by running systemctl disable getty@tty1 as root.
-sudo systemctl disable getty@tty1
+`sudo systemctl disable getty@tty1`
 # Install fbi, the framebuffer image viewer
-sudo apt install fbi
+`sudo apt install fbi`
 # Create the file with execute and
+```
+```
 sudo touch /etc/systemd/system/splashscreen.service
 sudo chmod +x /etc/systemd/system/splashscreen.service
 sudo vim /etc/systemd/system/splashscreen.service
-# and with the following content:
+```
+```
+### and with the following content:
 [Unit]
 Description=Splash screen
 DefaultDependencies=no
@@ -30,6 +35,8 @@ StandardOutput=tty
 
 [Install]
 WantedBy=sysinit.target
+```
+```
 # Replace /opt/splash.png with the path to the splash screen image as appropriate.
 
 # -d /dev/fb0 option will tell fbi which framebuffer to display the image on
@@ -80,3 +87,4 @@ avoid_warnings=1 # removes the warning overlay.
 # additionally allows turbo when low-voltage is present.
 # avoid_warnings=2 
 sudo reboot
+```
