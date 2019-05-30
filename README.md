@@ -1,10 +1,10 @@
-## Introduction
+## Introduction [awesome-config]
 - A simple guide to install and configure Arch-i3 on Mac
 
 ## Installation
 ### Update 30 May '19
 - Arch Linux On Macbook Air
-https://github.com/oguzhanlarca/awesome-config/tree/master/arch_linux#arch-on-macbook
+https://github.com/oguzhanlarca/arch-on-mac/tree/master/arch_linux#arch-on-macbook
 ### Update 29 May '19
 ```
 sudo pacman -S xorg xf86-input-synaptics acpid alsa-utils i3 w3m ranger
@@ -28,15 +28,15 @@ If i3-wm, dunst, i3lock, i3status, and suckless-tools are not installed automati
 
 ## Copying Congifurations
 ```
-git clone https://github.com/oguzhanlarca/awesome-config.git
+git clone https://github.com/oguzhanlarca/arch-on-mac.git
 ```
- *awesome-config/.config/i3/config*, copy it to *~/.config/i3/*.
+ *arch-on-mac/arch_linux/.config/i3/config*, copy it to *~/.config/i3/*.
 Do the same with all of the files inside *awesome-config* folder.
 My dotfiles contains font, so refresh your fontconfig cache `fc-cache -fv` after You copy the font. <br />
 
 **Note :** You can deploy this repository recursively using 
 ```
-git clone https://github.com/oguzhanlarca/awesome-config.git && cp -a awesome-config/. ~
+git clone https://github.com/oguzhanlarca/arch-on-mac.git && cp -a arch-on-mac/arch_linux/. ~
 ```
 I recommend You to copy the configuration files one by one to make yourself have more control.
 
