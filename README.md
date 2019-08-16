@@ -19,7 +19,7 @@ If i3-wm, dunst, i3lock, i3status, and suckless-tools are not installed automati
 - **Then install some additional packages for ubuntu like systems** <br />
 `sudo apt-get install compton hsetroot rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior`
 
-## Copying Congifurations
+## Copying Configurations
 ```
 git clone https://github.com/oguzhanlarca/arch-on-mac.git
 ```
