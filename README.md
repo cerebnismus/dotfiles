@@ -1,11 +1,4 @@
-## Introduction [awesome-config]
-- A simple guide to install and configure Arch-i3 on Mac
-
-## Installation
-### Update 30 May '19
-- Arch Linux On Macbook Air
-https://github.com/oguzhanlarca/arch-on-mac/tree/master/arch_linux#arch-on-macbook
-### Update 29 May '19
+### Introduction
 ```
 sudo pacman -S xorg xf86-input-synaptics acpid alsa-utils i3 w3m ranger
 sudo pacman -S xorg-init NetworkManager iw htop opera firefox neofetch
