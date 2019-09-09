@@ -1,2 +1,2 @@
 # dotfiles
-linux configurations
+custom unix-like config files and scripts.
