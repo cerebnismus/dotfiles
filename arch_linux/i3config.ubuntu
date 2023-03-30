@@ -2,10 +2,6 @@
 # i3 configuration file.
 # see "man i3status" for documentation.
 
-# Please see https://github.com/kuragxon/awesome-config for latest..!
-# Please see https://github.com/kuragxon/i3spotifystatus for the spotify!
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 
@@ -17,7 +13,7 @@ font pango:Source Code Pro 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # #################---DEPENDENCIES---###########################
 # sudo apt install rofi
@@ -31,8 +27,6 @@ font pango:Source Code Pro 9
 # sudo apt install gnome-calendar
 # sudo apt install py3status
 # sudo apt install fonts-font-awesome
-# cd ~/Documents/ && git clone https://github.com/kuragxon/i3spotifystatus.git
-# https://fontawesome.com/cheatsheet?from=io#use
 
 ######################---HELP---################################
 # $mod+h
