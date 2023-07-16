@@ -1,6 +1,4 @@
 # dotfiles
-unix-like conf
-
 
 <img width="1024" alt="image" src="https://user-images.githubusercontent.com/11842029/210557396-bfd6282f-a5d6-438c-a11b-0f95e49c5e21.png">
 
