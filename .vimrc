@@ -1,6 +1,6 @@
 " CoPilot in VIM
 " git clone https://github.com/github/copilot.vim.git \
-  ~/.vim/pack/github/start/copilot.vim
+"  ~/.vim/pack/github/start/copilot.vim
 
 " when delete not work
 set backspace=indent,eol,start
