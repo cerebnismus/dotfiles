@@ -1,0 +1,18 @@
+{
+    "repo_path": "/home/cerebnismus/dotfiles",
+    "files_to_track": [
+                        "/home/cerebnismus/.config/dunst/dunst",
+                        "/home/cerebnismus/.config/htop/htop",
+                        "/home/cerebnismus/.config/i3/",
+                        "/home/cerebnismus/.config/i3status/",
+                        "/home/cerebnismus/.config/neofetch/",
+                        "/home/cerebnismus/.config/compton.conf",
+                        "/home/cerebnismus/.fonts/",
+                        "/home/cerebnismus/.bash_logout",
+                        "/home/cerebnismus/.bashrc",
+                        "/home/cerebnismus/.conkyrc",
+                        "/home/cerebnismus/.profile",
+                        "/home/cerebnismus/.selected_editor",
+                        "/home/cerebnismus/.LEAVEME.md"
+                    ]
+}
