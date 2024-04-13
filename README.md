@@ -1,10 +1,10 @@
-#### Getting Started
+### Getting Started
 
-## Cron Settings
 ```bash
 crontab -e
 @reboot /usr/bin/python3 /home/cerebnismus/dotfiles/sync_dotfiles.py
 ```
+
 
 ## Update: 2024-04-13 23:13:05
 Removed: "/home/cerebnismus/.selected_editor",

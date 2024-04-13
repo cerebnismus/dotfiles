@@ -46,21 +46,21 @@ def update_readme(changes, config):
     if changes:
         readable_changes = generate_summary(changes)
         readme_path = os.path.join(config['repo_path'], 'README.md')
-        
+
         # Read the existing content of the README.md file
         with open(readme_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
-        
+
         # Define the update content with a timestamp
         update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{readable_changes}\n"
-        
+
         # Insert the update content after the second line (index 1)
         if len(lines) > 1:
-            lines.insert(2, update_content)
+            lines.insert(7, update_content)
         else:
             # If the file has less than 2 lines, just append the content
             lines.append(update_content)
-        
+
         # Write the modified content back to the README.md file
         with open(readme_path, 'w', encoding='utf-8') as file:
             file.writelines(lines)
