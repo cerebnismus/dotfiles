@@ -60,8 +60,10 @@ def main():
     for file_path in config['files_to_track']: # Copy files to the repo directory if necessary
         dest_path = os.path.join(config['repo_path'], os.path.basename(file_path))
         if os.path.isdir(file_path):
+            print(f"Copying directory: {file_path}")
             run_command(f'cp -r {file_path} {dest_path}')
         else:
+            print(f"Copying file: {file_path}")
             run_command(f'cp {file_path} {dest_path}')
 
     run_command('git add .') # Stage all files initially to compare changes later
