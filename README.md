@@ -1,9 +1,9 @@
 #### Getting Started
 
 
-## Update: 2024-04-13 23:07:17
-Removed: run_command(f'cp -r {file_path} {dest_path}')
-Added: if os.path.isdir(file_path):
-Added: run_command(f'cp -r {file_path} {dest_path}')
-Added: else:
-Added: run_command(f'cp {file_path} {dest_path}')
+## Update: 2024-04-13 23:13:05
+Removed: "/home/cerebnismus/.selected_editor",
+Removed: "/home/cerebnismus/README.md"
+Added: "/home/cerebnismus/.selected_editor"
+Removed: commit_message = 'Update configuration files by sync_dotfiles.py'
+Added: commit_message = 'Updated by sync_dotfiles.py'

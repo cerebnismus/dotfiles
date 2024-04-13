@@ -70,7 +70,7 @@ def main():
         print("Changes detected, updating README and committing changes...")
         update_readme(changes, config)
         run_command('git add .') # Add all changes including the README.md
-        commit_message = 'Update configuration files by sync_dotfiles.py'
+        commit_message = 'Updated by sync_dotfiles.py'
         run_command(f'git commit -m "{commit_message}"')
         run_command('git push origin master') # Push changes
     else:
