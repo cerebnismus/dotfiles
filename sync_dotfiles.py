@@ -62,7 +62,7 @@ def main():
         run_command(f'cp -r {file_path} {dest_path}')
 
     run_command('git add .') # Stage all files initially to compare changes later
-    changes = run_command('git diff --cached')  # Check for differences
+    changes = run_command("git diff --cached ':(exclude)README.md'")  # Check for differences
     if changes:
         print("Changes detected, updating README and committing changes...")
         update_readme(changes, config)
