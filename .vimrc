@@ -1,4 +1,4 @@
-" cerebnismus's dotfiles
+" cerebnismus's dotfiles v.1.2
 
 " CoPilot in VIM
 " git clone https://github.com/github/copilot.vim.git \
