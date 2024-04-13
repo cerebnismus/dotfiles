@@ -59,7 +59,10 @@ def main():
 
     for file_path in config['files_to_track']: # Copy files to the repo directory if necessary
         dest_path = os.path.join(config['repo_path'], os.path.basename(file_path))
-        run_command(f'cp -r {file_path} {dest_path}')
+        if os.path.isdir(file_path):
+            run_command(f'cp -r {file_path} {dest_path}')
+        else:
+            run_command(f'cp {file_path} {dest_path}')
 
     run_command('git add .') # Stage all files initially to compare changes later
     changes = run_command("git diff --cached ':(exclude)README.md'")  # Check for differences
