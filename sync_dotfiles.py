@@ -96,7 +96,7 @@ def main():
         print("No changes detected.")
 
     run_command('git add .') # Add all changes including the README.md
-    run_command(f'git commit -m "{commit_message}" --no-verify') # Temporarily bypass pre-commit hooks
+    run_command(f'git commit -m "{commit_message}" --no-verify') # Temporarily bypass pre-c
     run_command('git push origin master') # Push changes
 
 if __name__ == "__main__":
