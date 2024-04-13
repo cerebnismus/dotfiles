@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# If you use GitHub, you need to claim
+# Personal access tokens (classic) if you dont ofc
+
 import subprocess
 import os
 import datetime
@@ -47,13 +53,14 @@ def main():
     Load configuration, change directory to the repo path, stage all files,
     check for differences, and if changes are detected, update README and commit changes.
     """
-    config = load_config()
+    os.chdir(os.path.dirname(os.path.realpath(__file__))) # Change directory to the script path
+    config = load_config() # Load configuration from config.json
+    # os.chdir(config['repo_path']) # Change directory to the repo path
 
     for file_path in config['files_to_track']: # Copy files to the repo directory if necessary
         dest_path = os.path.join(config['repo_path'], os.path.basename(file_path))
-        run_command(f'cp {file_path} {dest_path}')
+        run_command(f'cp -r {file_path} {dest_path}')
 
-    os.chdir(config['repo_path']) # Change directory to the repo path
     run_command('git add .') # Stage all files initially to compare changes later
     changes = run_command('git diff --cached')  # Check for differences
     if changes:
