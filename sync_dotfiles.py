@@ -90,13 +90,15 @@ def main():
     run_command(f'git commit -m "{commit_message}"')
     changes = run_command("git diff --cached ':(exclude)README.md'")  # Check for differences
     if changes:
-        print("Changes detected, updating README and committing changes...")
+        print("Changes detected.")
+        print(changes)
         update_readme(changes, config)
-        run_command('git add .') # Add all changes including the README.md
-        run_command(f'git commit -m "{commit_message}"')
-        run_command('git push origin master') # Push changes
     else:
-        print("No changes detected, no action taken.")
+        print("No changes detected.")
+
+    run_command('git add .') # Add all changes including the README.md
+    run_command(f'git commit -m "{commit_message}"')
+    run_command('git push origin master') # Push changes
 
 if __name__ == "__main__":
     main()
