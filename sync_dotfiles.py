@@ -37,6 +37,30 @@ def generate_summary(changes):
     return '\n'.join(summary)
 """
 
+def colorize_diff(diff_text):
+    """
+    Generates a Markdown-friendly version of a diff output, with added lines in green
+    and removed lines in red.
+    
+    :param diff_text: str - The raw diff string.
+    :return: str - A string formatted with Markdown and HTML for colored display.
+    """
+    lines = diff_text.split('\n')
+    colorized_lines = []
+    
+    for line in lines:
+        if line.startswith('+') and not line.startswith('+++'):
+            # Wrap added lines in a green span
+            colorized_line = f'<span style="color:green;">{line}</span>'
+        elif line.startswith('-') and not line.startswith('---'):
+            # Wrap removed lines in a red span
+            colorized_line = f'<span style="color:red;">{line}</span>'
+        else:
+            colorized_line = line
+        colorized_lines.append(colorized_line)
+    
+    return '\n'.join(colorized_lines)
+
 
 def update_readme(changes, config):
     """Updates README.md by inserting a formatted summary of the changes at the nth line."""
@@ -50,6 +74,7 @@ def update_readme(changes, config):
 
         # Define the update content with a timestamp
         # update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{readable_changes}\n"
+        changes = colorize_diff(changes)
         update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{changes}\n"
 
         # Insert the update content after the second line (index 1)
