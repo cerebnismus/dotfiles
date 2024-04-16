@@ -32,3 +32,4 @@ index d2f498d..9e7abe4 100644
 
 ```
 
+Badges Tutorial Completed
