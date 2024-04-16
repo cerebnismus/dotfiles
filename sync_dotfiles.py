@@ -34,9 +34,9 @@ def generate_summary(changes):
     summary = []
     for line in lines:
         if line.startswith('+') and not line.startswith('+++'):
-            summary.append(f'```diff\nAdded: {line[1:].strip()}\n```')
+            summary.append(f'diff\nAdded: ```{line[1:].strip()}\n```')
         elif line.startswith('-') and not line.startswith('---'):
-            summary.append(f'```diff\nRemoved: {line[1:].strip()}\n```')
+            summary.append(f'diff\nRemoved: ```{line[1:].strip()}\n```')
     return '\n'.join(summary)
 
 import datetime
