@@ -6,6 +6,20 @@ crontab -e
 ```
 
 
+## Update: 2024-04-16 19:07:36
+```diff
+Added: 
+```
+```diff
+Added: export NVM_DIR="$HOME/.nvm"
+```
+```diff
+Added: [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+```
+```diff
+Added: [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
 ## Update: 2024-04-14 06:44:31
 ```diff
 Removed: neofetch
