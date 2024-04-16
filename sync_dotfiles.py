@@ -47,7 +47,7 @@ def generate_summary(changes):
     cleaned_changes = changes.replace("```", "").replace('"""', '')
     
     # Wrap the cleaned changes in triple quotes
-    return f'"""\n{cleaned_changes}\n"""'
+    return f'```\n{cleaned_changes}\n```'
 
 
 
