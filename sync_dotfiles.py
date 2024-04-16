@@ -51,10 +51,10 @@ def colorize_diff(diff_text):
     for line in lines:
         if line.startswith('+') and not line.startswith('+++'):
             # Wrap added lines in a green span
-            colorized_line = f'<span style="color:green;">{line}</span>'
+            colorized_line = f'<span style="color:green;">${line}</span>'
         elif line.startswith('-') and not line.startswith('---'):
             # Wrap removed lines in a red span
-            colorized_line = f'<span style="color:red;">{line}</span>'
+            colorized_line = f'<span style="color:red;">${line}</span>'
         else:
             colorized_line = line
         colorized_lines.append(colorized_line)
