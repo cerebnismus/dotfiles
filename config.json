@@ -13,6 +13,7 @@
                         "/home/cerebnismus/.conkyrc",
                         "/home/cerebnismus/.profile",
                         "/home/cerebnismus/.selected_editor",
+                        "/home/cerebnismus/.config/nvim/",
                         "/home/cerebnismus/.vimrc"
                     ]
 }

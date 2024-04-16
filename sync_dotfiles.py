@@ -4,10 +4,7 @@
 # If you use GitHub, you need to claim
 # Personal access tokens (classic) if you dont ofc
 
-import subprocess
-import os
-import datetime
-import json
+import subprocess, os, json, datetime
 
 def load_config():
     """Load configuration from a JSON file."""
@@ -28,8 +25,8 @@ def run_command(command):
         print("Error:", result.stderr)
     return result.stdout
 
+"""
 def generate_summary(changes):
-    """Generates a more readable summary of changes for the README.md."""
     lines = changes.split('\n')
     summary = []
     for line in lines:
@@ -38,13 +35,13 @@ def generate_summary(changes):
         elif line.startswith('-') and not line.startswith('---'):
             summary.append(f'diff\nRemoved:```{line[1:].strip()}\n```')
     return '\n'.join(summary)
+"""
 
-import datetime
 
 def update_readme(changes, config):
     """Updates README.md by inserting a formatted summary of the changes at the nth line."""
     if changes:
-        readable_changes = generate_summary(changes)
+        # readable_changes = generate_summary(changes)
         readme_path = os.path.join(config['repo_path'], 'README.md')
 
         # Read the existing content of the README.md file
@@ -52,7 +49,8 @@ def update_readme(changes, config):
             lines = file.readlines()
 
         # Define the update content with a timestamp
-        update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{readable_changes}\n"
+        # update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{readable_changes}\n"
+        update_content = f"\n## Update: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n{changes}\n"
 
         # Insert the update content after the second line (index 1)
         if len(lines) > 1:
