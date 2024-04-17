@@ -31,7 +31,9 @@ TZ='Europe/Istanbul'; export TZ
 xset s off
 xset -dpms
 xrandr --output eDP-1 --off
-conky -d -c ~/.conkyrc
-#xrandr --auto && xrandr --output eDP-1 --off
-#volumeicon
+
+# conky -d -c ~/.conkyrc
+# xrandr --auto && xrandr --output eDP-1 --off
+# volumeicon
+
 /usr/bin/python3 /home/cerebnismus/dotfiles/sync_dotfiles.py

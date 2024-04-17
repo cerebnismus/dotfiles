@@ -6,6 +6,41 @@ crontab -e
 ```
 
 
+## Update: 2024-04-17 17:16:07
+```
+diff --git a/.bashrc b/.bashrc
+index 17cfe27..83a0185 100644
+--- a/.bashrc
++++ b/.bashrc
+@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
+   fi
+ fi
+ 
+-neofetch
++
+ 
+ 
+ export NVM_DIR="$HOME/.nvm"
+diff --git a/.profile b/.profile
+index 1460ab2..d642c19 100644
+--- a/.profile
++++ b/.profile
+@@ -31,7 +31,9 @@ TZ='Europe/Istanbul'; export TZ
+ xset s off
+ xset -dpms
+ xrandr --output eDP-1 --off
+-conky -d -c ~/.conkyrc
+-#xrandr --auto && xrandr --output eDP-1 --off
+-#volumeicon
++
++# conky -d -c ~/.conkyrc
++# xrandr --auto && xrandr --output eDP-1 --off
++# volumeicon
++
+ /usr/bin/python3 /home/cerebnismus/dotfiles/sync_dotfiles.py
+
+```
+
 ## Update: 2024-04-17 05:11:00
 ```
 diff --git a/.bashrc b/.bashrc

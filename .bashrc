@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-neofetch
+
 
 
 export NVM_DIR="$HOME/.nvm"
