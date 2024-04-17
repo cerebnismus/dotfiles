@@ -6,6 +6,22 @@ crontab -e
 ```
 
 
+## Update: 2024-04-17 05:11:00
+```
+diff --git a/.bashrc b/.bashrc
+index fc727d4..17cfe27 100644
+--- a/.bashrc
++++ b/.bashrc
+@@ -122,3 +122,6 @@ neofetch
+ export NVM_DIR="$HOME/.nvm"
+ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+ [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
++
++
++PATH="$PATH:~/.local/bin"
+
+```
+
 ## Update: 2024-04-16 20:41:25
 ```
 diff --git a/.README.md.un~ b/.README.md.un~
