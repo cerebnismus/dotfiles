@@ -1,10 +1,6 @@
-" cerebnismus's dotfiles v.1.2
-
 " CoPilot in VIM
 " git clone https://github.com/github/copilot.vim.git \
 "  ~/.vim/pack/github/start/copilot.vim
-
-" colorscheme desert
 
 " when delete not work
 set backspace=indent,eol,start

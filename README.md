@@ -6,6 +6,27 @@ crontab -e
 ```
 
 
+## Update: 2024-04-18 20:29:26
+```
+diff --git a/.vimrc b/.vimrc
+index d150d62..5908581 100644
+--- a/.vimrc
++++ b/.vimrc
+@@ -1,11 +1,7 @@
+-" cerebnismus's dotfiles v.1.2
+-
+ " CoPilot in VIM
+ " git clone https://github.com/github/copilot.vim.git \
+ "  ~/.vim/pack/github/start/copilot.vim
+ 
+-" colorscheme desert
+-
+ " when delete not work
+ set backspace=indent,eol,start
+ 
+
+```
+
 ## Update: 2024-04-17 17:16:07
 ```
 diff --git a/.bashrc b/.bashrc
