@@ -1,22 +1,20 @@
-" cerebnismus's dotfiles v.1.2
-
-" CoPilot in VIM
+" Install CoPilot in nVIM
+" sudo yum install nodejs
 " git clone https://github.com/github/copilot.vim.git \
-"  ~/.vim/pack/github/start/copilot.vim
+"   ~/.config/nvim/pack/github/start/copilot.vim
+" :Copilot setup
+" :help copilot
 
+" nVIM Configurations
 " colorscheme desert
-
 " when delete not work
 set backspace=indent,eol,start
-
 syntax enable
-
 set number
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
 set showmatch
 set wrap
 set mouse=a
@@ -28,4 +26,3 @@ set clipboard=unnamedplus
 set path+=**
 set undofile
 set wildmenu
-
